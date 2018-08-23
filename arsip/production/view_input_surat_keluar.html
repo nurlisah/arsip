@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gentelella Alela! | </title>
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="../vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="../vendors/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="../vendors/cropper/dist/cropper.min.css" rel="stylesheet">
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <br />
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                  <li><a href="admin.html"><i class="fa fa-user"></i> Admin </a></li>
+                  <li class="active"><a><i class="fa fa-table"></i> Form Input <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="view_input_surat_masuk.html">Input Surat Masuk</a></li>
+                      <li><a href="view_input_surat_keluar.html">Input Surat Keluar</a></li>
+                      <li><a href="view_input_nota_dinas.html">Input Nota Dinas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="view_nota_dinas.html"><i class="fa fa-users"></i> Nota Dinas </a></li>
+                  <li><a><i class="fa fa-sitemap"></i> Bentuk Surat <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a>Surat Bentuk Khusus<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="#level2_1">MOU/Nota Kesepahaman</a></li>
+                          <li><a href="#level2_1">Surat Perjanjian (PJ)</a></li>
+                          <li><a href="#level2_2">Surat Perintah Kerja (SPK)</a></li>
+                          <li><a href="#level2_2">Surak Kuasa (SKu)</a></li>
+                          <li><a href="#level2_2">Surat Tugas (STu)</a></li>
+                          <li><a href="#level2_2">Amandemen (Amd)</a></li>
+                          <li><a href="#level2_2">Berita Acara (BA)</a></li>
+                          <li><a href="#level2_2">Surat Keterangan (SKt)</a></li>
+                          <li><a href="#level2_2">Surat Pernyataan (SPn)</a></li>
+                          <li><a href="#level2_2">Surat Laporan (Lap)</a></li>
+                          <li><a href="#level2_2">Surat Peringatan (SPt)</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Produk Hukum<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                           <li><a href="#level2_1">Peraturan (P)</a></li>
+                          <li><a href="#level2_1">Keputusan (K)</a></li>
+                          <li><a href="#level2_2">Intruksi (I)</a></li>
+                          <li><a href="#level2_2">Edaran (E)</a></li>
+                          <li><a href="#level2_2">Pengumuman (Pen)</a></li>
+                          <li><a href="#level2_2">Pemberitahuan (Pt)</a></li>
+                        </ul>
+                      </li>
+                       <li><a>Lain - Lain<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="#level2_1">Info Masalah</a></li>
+                          <li><a href="#level2_1">Info Daftar User</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel" style="">
+                  <div class="x_title">
+                    <h2>Input Surat Keluar</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="col-md-3 col-sm-3 col-xs-12" for="first-name">Nomor Surat <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                        <label for="middle-name" class="col-md-3 col-sm-3 col-xs-12">Bentuk Surat</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control">
+                            <option>Pilih</option>
+                            <option>MOU/Nota Kesepahaman</option>
+                            <option>Surat Perjanjian (PJ)</option>
+                            <option>Surat Perintah Kerja (SPK)</option>
+                            <option>Surak Kuasa (SKu)</option>
+                            <option>Surat Tugas (STu)</option>
+                            <option>Amandemen (Amd)</option>
+                            <option>Berita Acara (BA)</option>
+                            <option>Surat Keterangan (SKt)</option>
+                            <option>Surat Pernyataan (SPn)</option>
+                            <option>Surat Laporan (Lap)</option>
+                            <option>Surat Peringatan (SPt)</option>
+                            <option>Peraturan (P)</option>
+                            <option>Keputusan (K)</option>
+                            <option>Edaran (E)</option>
+                            <option>Pengumuman (Pen)</option>
+                            <option>Pemberitahuan (Pt)</option>
+                            <option>Info Masalah</option>
+                            <option>Info Daftar User</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="middle-name" class="col-md-3 col-sm-3 col-xs-12">Tahun</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control">
+                            <option>Pilih</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 col-sm-3 col-xs-12" for="first-name">Tanggal Surat<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 col-sm-3 col-xs-12" for="first-name">Dengan <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 col-sm-3 col-xs-12" for="first-name">Perihal<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." rows="8" data-parsley-validation-threshold="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Kembali</button>
+                          <button class="btn btn-primary" type="reset">Reset</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <script src="../vendors/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <script src="../vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="../vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+    <script src="../vendors/cropper/dist/cropper.min.js"></script>
+    <script src="../build/js/custom.min.js"></script>
+<script>
+    $('#myDatepicker').datetimepicker();
+    
+    $('#myDatepicker2').datetimepicker({
+        format: 'DD.MM.YYYY'
+    });
+    
+    $('#myDatepicker3').datetimepicker({
+        format: 'hh:mm A'
+    });
+    
+    $('#myDatepicker4').datetimepicker({
+        ignoreReadonly: true,
+        allowInputToggle: true
+    });
+
+    $('#datetimepicker6').datetimepicker();
+    
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false
+    });
+    
+    $("#datetimepicker6").on("dp.change", function(e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    
+    $("#datetimepicker7").on("dp.change", function(e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+</script>
+  </body>
+</html>
